@@ -20,15 +20,15 @@ W sprawozdaniu proszę umieścić plik Dockerfile wraz z niezbędnymi komentarza
 3. Należy podać polecenia niezbędne do: \
 a. zbudowania opracowanego obrazu kontenera,
 ```bash
-docker build -t lab7_5 .
+docker build -t zadanie1 .
 ```
 b. uruchomienia kontenera na podstawie zbudowanego obrazu,
 ```bash
-docker run -d -p 3000:3000 --name lab7_5 lab7_5
+docker run -d -p 3000:3000 --name zadanie1_kontener zadanie1
 ```
 c. sposobu uzyskania informacji z logów, które wygenerowałą opracowana aplikacja podczas uruchamiana kontenera,
 ```bash
-docker logs <nazwa_kontenera>
+docker logs zadanie1_kontener
 ```
 d. sprawdzenia, ile warstw posiada zbudowany obraz oraz jaki jest rozmiar obrazu.
 Sprawdzenie rozmiarów warstw:
@@ -37,5 +37,5 @@ docker images
 ```
 Sprawdzenie ilości warstw:
 ```bash
-docker history <nazwa_obrazu>
+docker history zadanie1
 ```
