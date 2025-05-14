@@ -1,5 +1,13 @@
 # PAwChO-zadanie1
 
+Obraz można pobrać poprzez polecenia:
+```bash
+docker pull extremical/zadanie1:latest
+```
+```bash
+docker pull ghcr.io/extremewars/pawcho-zadanie1:latest
+```
+
 1. Proszę opracować aplikację (dowolny język programowania), która realizować będzie następującą
 funkcjonalność:
     1. po uruchomieniu kontenera z tą aplikacją, pozostawi ona w logach informację o dacie
