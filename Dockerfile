@@ -22,8 +22,6 @@ FROM scratch AS prod
 LABEL org.opencontainers.image.authors="Paweł Olech"
 LABEL org.opencontainers.image.title="Zadanie 1 - Aplikacja pogodowa"
 LABEL org.opencontainers.image.description="Aplikacja pogodowa w Node.js"
-LABEL org.opencontainers.image.created="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-LABEL org.opencontainers.image.version="1.0.0"
 # Dodanie systemu plików
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz /
 # Skopiowanie binarnej wersji aplikacji z poprzedniego etapu
