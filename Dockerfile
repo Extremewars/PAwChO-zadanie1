@@ -9,7 +9,7 @@ WORKDIR /app
 COPY src/package*.json ./
 # Instalacja zależności
 RUN npm install
-# Instalacja pakietu pkg umożliwiającego utworzyć plik wykywalny projektu
+# Instalacja pakietu pkg umożliwiającego utworzyć plik wykonywalny projektu
 RUN npm install -g pkg
 # Skopiowanie plików źródłowych
 COPY src/ ./
