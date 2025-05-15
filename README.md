@@ -127,4 +127,7 @@ Należy podać polecenia niezbędne do:
    ```bash
    docker history zadanie1
    ```
-   ![Działanie polecenia docker history](./zdjecia/docker_history.png)
+   ```bash
+   docker image inspect zadanie1 --format='{{ len .RootFS.Layers }}'
+   ```
+   ![Działanie polecenia docker history](./zdjecia/docker_image_inspect.png)
