@@ -16,7 +16,7 @@ countryData.forEach(item => {
 router.get('/', function(req, res, next) {
   res.render('index', {weather: null, error: null, countryMap });
 });
-// Wybranie miasta
+// Pobranie pogody na podstawie miasta
 router.post('/', function(req, res, next) {
   let city = req.body.city;
   let url = config.url + `&q=${city}`;
